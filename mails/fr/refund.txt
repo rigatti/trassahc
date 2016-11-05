@@ -1,0 +1,7 @@
+
+[{shop_url}] 
+
+Bonjour {firstname} {lastname}, 
+
+Nous avons procédé au remboursement de votre commande sur
+{shop_name} portant la référence {order_name}. 

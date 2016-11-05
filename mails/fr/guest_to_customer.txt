@@ -1,0 +1,13 @@
+
+[{shop_url}] 
+
+Bonjour {firstname} {lastname}, 
+
+Votre compte invité sur {shop_name} a été transformé en compte
+client. 
+
+ADRESSE E-MAIL : {email}
+
+MOT DE PASSE : {passwd} 		 
+
+Conservez ces informations confidentielles. 

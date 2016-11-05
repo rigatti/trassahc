@@ -1,0 +1,7 @@
+
+[{shop_url}] 
+
+Bonjour {firstname} {lastname}, 
+
+Nous vous informons de la génération d'un avoir à votre nom
+relatif à votre commande ayant pour référence {order_name}. 

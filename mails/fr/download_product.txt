@@ -1,0 +1,11 @@
+
+[{shop_url}] 
+
+Bonjour {firstname} {lastname},
+
+Merci pour votre commande portant la référence {order_name} sur
+{shop_name} 
+
+Vous avez {nbproducts} produit(s) à télécharger.
+
+{virtualproducts} 		 

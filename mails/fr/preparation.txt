@@ -1,0 +1,7 @@
+
+[{shop_url}] 
+
+Bonjour {firstname} {lastname}, 
+
+Votre commande sur {shop_name} ayant pour référence {order_name}
+est en cours de préparation. 
