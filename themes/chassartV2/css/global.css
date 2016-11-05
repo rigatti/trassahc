@@ -269,13 +269,13 @@ input.button_mini,input.button_small,input.button,input.button_large,input.butto
 	position: relative;
 	display: inline-block;
 	padding: 5px 7px;
-	border: 1px solid #4B4C4B;
+	border: 1px solid #125E1D;
 	-moz-border-radius: 3px !important;
 	-webkit-border-radius: 3px !important;
 	border-radius: 3px !important;
 	font-weight: bold;
 	color: #FFF;
-	background: repeat-x 0 0 #4B4C4B;
+	background: repeat-x 0 0 #125E1D;
 	cursor: pointer;
 }
 
@@ -427,7 +427,7 @@ table.std  td,table.table_block  td {
 	color: #fff;
 	text-shadow: 0 1px 0 #000;
 	text-transform: uppercase;
-	background: #4B4C4B;
+	background: #125E1D;
 	font-weight: bold;
 }
 
@@ -437,7 +437,7 @@ table.std  td,table.table_block  td {
 	color: #fff;
 	text-shadow: 0 1px 0 #000;
 	text-transform: uppercase;
-	background: #4B4C4B;
+	background: #125E1D;
 	font-weight: bold;
 }
 
@@ -926,7 +926,7 @@ div.star_hover a,div.star a:hover {
 	list-style-type: none;
 	margin-top: 20px;
 	/*border-bottom: 8px solid #f7b900*/
-	border-bottom: 1px solid #4B4C4B;
+	border-bottom: 1px solid #125E1D;
 }
 
 ul.idTabs li {
@@ -947,7 +947,7 @@ ul.idTabs li {
 .idTabs .selected {
 	color: #FFFFFF;
 	/*background: url(../img/bg_li_idTabs.png) repeat-x 0 0*/
-	background: none repeat scroll 0 0 #4B4C4B;
+	background: none repeat scroll 0 0 #125E1D;
 }
 
 #more_info_sheets {
@@ -1368,7 +1368,7 @@ table#cart_summary .gift-icon {
 	font-size: 12px;
 	color: #fff;
 	text-transform: uppercase;
-	background: none repeat scroll 0 0 #4B4C4B
+	background: none repeat scroll 0 0 #125E1D
 }
 
 #create-account_form .title_block {
@@ -1517,7 +1517,7 @@ margin: 10px 0 0 0;*/
 	color: #fff;
 	text-shadow: 0 1px 0 #000;
 	text-transform: uppercase;
-	background: none repeat scroll 0 0 #4B4C4B;
+	background: none repeat scroll 0 0 #125E1D;
 }
 
 #order .delivery_option_radio,#order-opc .delivery_option_radio {
@@ -2966,7 +2966,7 @@ tr.subitem>td:first-child+td {
 }
 
 #primary_block h1,#center_column h1 {
-	background: none repeat scroll 0 0 #4B4C4B;
+	background: none repeat scroll 0 0 #125E1D;
 	color: #FFFFFF;
 	font-size: 1.1em;
 	font-weight: bold;
