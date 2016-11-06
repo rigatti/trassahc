@@ -73,7 +73,7 @@
 		{/if}
 		<div id="page" class="container_9 clearfix">
 			<!-- Header -->
-			<div id="header" class="grid_9 alpha omega" style="background: rgba(0, 0, 0, 0) url(/public/img/logo_homepage.jpg) no-repeat scroll 0 0 / 300px 200px; height:220px;width:1000px;">
+			<div id="header" class="grid_9 alpha omega" style="background: rgba(0, 0, 0, 0) url(/public/img/logo_homepage.jpg) no-repeat scroll 0 0 ; height:170px;width:1000px;">
 			
 				<div id="header_right" class="grid_9 omega">
 					{$HOOK_TOP}

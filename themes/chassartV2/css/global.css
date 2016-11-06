@@ -836,11 +836,12 @@ div.star_hover a,div.star a:hover {
 	list-style: none outside none;
 	color: #FFFFFF;
 	width: 100%;
+	padding-top: 3px;
 }
 
 #footerNew .block_various_links li a {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #4b4c4b;
 }
 
 #footerNew .block_various_links li {
@@ -853,7 +854,7 @@ div.star_hover a,div.star a:hover {
 #footerNew .block_various_links li.first_item {
 	border: medium none;
 	padding-left: 0;
-	color: #FFFFFF;
+	color: #4b4c4b;
 }
 
 #footer {
