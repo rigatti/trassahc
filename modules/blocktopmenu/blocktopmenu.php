@@ -723,9 +723,9 @@ class Blocktopmenu extends Module
 
 		/* [RM - START]*/
 		if (file_exists(_PS_THEME_DIR_.'modules/blocktopmenu/blocktopmenu.tpl'))
-			return $this->display(_PS_THEME_DIR_.'modules/blocktopmenu/', 'blocktopmenu.tpl');
+			return $this->display(_PS_THEME_DIR_.'modules/blocktopmenu/', 'blocktopmenu.tpl', $this->getCacheId());
 		else
-			return $this->display(__FILE__, 'blocktopmenu.tpl');
+			return $this->display(__FILE__, 'blocktopmenu.tpl', $this->getCacheId());
 	}
 
 	public function hookDisplayNav($params)
