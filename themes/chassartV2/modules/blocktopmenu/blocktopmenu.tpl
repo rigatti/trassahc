@@ -1,3 +1,6 @@
+ 	
+<a class="sf-menu-header-logo-zone" href="/public"> </a>
+
 {if $MENU != ''}
 	
 	<!-- Menu -->
@@ -9,7 +12,7 @@
 	
 	{if $MENU_SEARCH}
 	<div class="sf-contener sf-menu-header sf-menu-header-search">
-		<form id="searchbox" action="http://127.0.0.1/public/recherche" method="get">
+		<form id="searchbox" action="/public/recherche" method="get">
 			<input name="controller" value="search" type="hidden">
 			<input value="position" name="orderby" type="hidden">
 			<input value="desc" name="orderway" type="hidden">

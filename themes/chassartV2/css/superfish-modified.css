@@ -32,9 +32,14 @@
 	float: left;
 	margin-bottom: 1em;
 }
-
+.sf-menu-header-logo-zone {
+	position: absolute;
+	left: 15px;
+	height: 160px;
+	width: 240px;
+}
 .sf-menu-header-bottom {
-	margin: 10px 0;
+	margin: 20px 0;
 	padding: 0;
 	/*width: 400px;*/
 	left: 280px;
@@ -104,7 +109,7 @@
 	display: block;
 	color: #666;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 13px 15px;
 	text-decoration: none;
 }
 
@@ -124,6 +129,11 @@
 
 .sf-menu-header ul li ul li {
 	display: inline-block;
+	width: 130px;
+}
+.sf-menu-header ul li:hover ul li {
+	display: inline-block;
+	width: 180px;
 }
 
 .sf-menu-header ul li ul {
@@ -131,6 +141,7 @@
 	position: absolute;
 	/*background-color: #f9f9f9;*/
 	/*min-width: 160px;*/
+	width: 180px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
