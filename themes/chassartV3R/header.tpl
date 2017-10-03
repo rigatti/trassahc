@@ -51,6 +51,15 @@
 			var priceDisplayMethod = {$priceDisplay};
 			var roundMode = {$roundMode};
 		</script>
+
+		<script src="/public/themes/chassartV3R/js/jquery.1.12.4.min.js"></script>
+		<script src="/public/themes/chassartV3R/js/bootstrap.3.3.7.min.js"></script>
+
+        <link rel="stylesheet" href="/public/themes/chassartV3R/css/bootstrap.3.3.7.min.css" />
+        <link rel="stylesheet" href="/public/themes/chassartV3R/css/bootstrap-theme.3.3.7.min.css" />
+
+        <link rel="stylesheet" href="/public/themes/chassartV3R/css/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/public/themes/chassartV3R/css/main.css" />
 {if isset($css_files)}
 	{foreach from=$css_files key=css_uri item=media}
 	<link href="{$css_uri}" rel="stylesheet" type="text/css" media="{$media}" />
@@ -71,23 +80,79 @@
 			<p>{l s='You cannot place a new order from your country.'} <span class="bold">{$geolocation_country}</span></p>
 		</div>
 		{/if}
-		<div id="page" class="container_9 clearfix">
-			<!-- Header -->
-			<div id="header" class="grid_9 alpha omega" style="background: rgba(0, 0, 0, 0) url(/public/img/logo_homepage_text.jpg) no-repeat scroll 0 0 ; height:170px;width:1000px;">
-			
-				<div id="header_right" class="grid_9 omega">
-					{$HOOK_TOP}
-				</div>				
-			</div>
-			<div class="sf-menu-breaker">
-			</div>
 
-			<div id="columns" class="grid_9 alpha omega clearfix">
-				<!-- Left -->
-				<div id="left_column" class="column grid_2 alpha">
-					{$HOOK_LEFT_COLUMN}
-				</div>
+        <div class="row" style="padding-bottom: 5px;">
+            <div class="col-xs-3 vcenter" style="padding-left:38px;">
+                <img style="min-width: 50px;" class="img-responsive" src="logo_homepage_text.jpg"/>
+            </div>
+            <div class="col-xs-9 vcenter">
+                <div class="row">
+                    <div class="col-xs-7 text-right">
+                        <div >
+                             <form id="searchbox" action="#" method="get">
+                                    <input name="controller" value="search" type="hidden">
+                                    <input value="position" name="orderby" type="hidden"> <input value="desc" name="orderway" type="hidden">
+                                    <input name="search_query" value="" type="text" placeholder="Recherche..">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xs-4" style="margin-right:20px;">
+                        <nobr>Bienvenue | <i class="fa fa-user" aria-hidden="true"></i> login</nobr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-11">
+                        <nav class="navbar-default navbar-fixed-width navbar">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                            data-target="#navbarMenu" aria-expanded="false" aria-controls="navbarMenu">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div id="navbarMenu" class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                               aria-haspopup="true" aria-expanded="false">Catalogues et conseils <span
+                                                    class="caret"></span> </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Am&eacute;nagement d'&eacute;tang</a></li>
+                                                <li><a href="#">Engrais</a></li>
+                                                <li><a href="#">Terracottem</a></li>
+                                                <li><a href="#">Bordures m&eacute;talliques</a></li>
+                                            </ul>
+                                        </li>
 
-				<!-- Center -->
-				<div id="center_column" class=" grid_5">
+                                        <li><a href="#"
+                                               title="Heures d'ouvertures">Heures d'ouvertures</a></li>
+                                        <li><a href="#"
+                                               title="Contacts">Contacts</a></li>
+                                        <li><a href="#"
+                                               title="Liens">Liens</a></li>
+                                        <li class="hidden-sm"><a href="#"
+                                                                 title="Nouveaux produits">Nouveaux
+                                            produits</a></li>
+                                        <li class="hidden-sm hidden-md">
+                                            <a href="#"
+                                               title="Tarif en pdf">Tarif en pdf</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row containerMain">
+            <div class="col-sm-3 col-lg-2">
+                {$HOOK_LEFT_COLUMN}
+            </div>
+            <div class="col-sm-6 col-lg-8">
+
+
 	{/if}

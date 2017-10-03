@@ -24,28 +24,34 @@
 *}
 
 		{if !$content_only}
-				</div>
 
-<!-- Right -->
-				<div id="right_column" class="column grid_2 omega">
-					{$HOOK_RIGHT_COLUMN}
-				</div>
-			</div>
-
-<!-- Footer -->
-
-<div id="footerNew"><!-- MODULE Block various links -->
-	 <br> 
-	<ul id="block_various_links_footer" class="block_various_links">
-		<li class="first_item"><a title="" href="/public/nouveaux-produits">Nouveaux produits</a></li>
-		<li class="item"><a title="" href="/public/contactez-nous">Contactez-nous</a></li>
-				<li class="item"><a title="Conditions de livraison" href="/public/content/1-conditions-livraison">Conditions de livraison</a></li>
-				<li class="item"><a title="A propos" href="/public/content/4-a-propos">A propos</a></li>
-	</ul>
-<!-- /MODULE Block various links -->
-</div>
-		
 		</div>
+            <div class="col-sm-3 col-lg-2">
+                <nav class="navbar navbar-default">
+                    {$HOOK_RIGHT_COLUMN}
+                </nav>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container container-footer">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="/public/nouveaux-produits">Nouveaux Produits</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="/public/contactez-nous">Contactez-nous</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a title="Conditions de livraison" href="/public/content/1-conditions-livraison">Conditions de livraison</a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a title="A propos" href="/public/content/4-a-propos">A propos</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 	{/if}
 {literal}
 <script>
