@@ -23,26 +23,33 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<!-- Block categories module -->
-<div id="categories_block_left" class="block">
-	<p class="title_block">{l s='Categories' mod='blockcategories'}</p>
-	<div class="block_content">
-		<ul class="tree {if $isDhtml}dhtml{/if}">
-		{foreach from=$blockCategTree.children item=child name=blockCategTree}
-			{if $smarty.foreach.blockCategTree.last}
-				{include file="$branche_tpl_path" node=$child last='true'}
-			{else}
-				{include file="$branche_tpl_path" node=$child}
-			{/if}
-		{/foreach}
-		</ul>
-		{* Javascript moved here to fix bug #PSCFI-151 *}
-		<script type="text/javascript">
-		// <![CDATA[
-			// we hide the tree only if JavaScript is activated
-			$('div#categories_block_left ul.dhtml').hide();
-		// ]]>
-		</script>
-	</div>
-</div>
-<!-- /Block categories module -->
+<nav class="navbar navbar-default">
+    <!-- Block categories module -->
+    <div id="categories_block_left" class="block">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbarCategoryReal" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">{l s='Categories' mod='blockcategories'}</span>
+        </div>
+
+        <div id="navbarCategoryReal" class="collapse navbar-collapse">
+            <div class="list-group mainMenu">
+                {foreach from=$blockCategTree.children item=child name=blockCategTree}
+                    {if $smarty.foreach.blockCategTree.last}
+                        {include file="$tpl_dir./category-tree-branch.tpl" node=$child last='true'}
+                    {else}
+                        {include file="$tpl_dir./category-tree-branch.tpl" node=$child}
+                    {/if}
+                {/foreach}
+            </div>
+        </div>
+
+    </div>
+    <!-- /Block categories module -->
+</nav>
