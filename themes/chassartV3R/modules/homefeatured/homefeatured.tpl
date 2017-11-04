@@ -22,10 +22,17 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
 <!-- MODULE Home Featured Products -->
-<div id="featured-products_block_center" class="block products_block clearfix">
-	<p class="title_block">{l s='Featured products' mod='homefeatured'}</p>
+<div id="featured-products_block_center" class="row block products_block clearfix">
+    <nav class="navbar navbar-default" style="margin-left:0px;">
+        <div class="col-xs-12">
+            <div class="row exclusive">
+                <p class="titleBlock" style="float: left; height: 50px; padding: 15px 15px; font-size: 18px; line-height: 20px;">
+                    {l s='Featured products' mod='homefeatured'}
+                </p>
+            </div>
+        </div>
+    </nav>
 	{if isset($products) AND $products}
 		<div class="block_content">
 			{assign var='liHeight' value=250}
