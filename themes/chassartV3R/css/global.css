@@ -2950,7 +2950,8 @@ tr.subitem>td:first-child+td {
 	color: #333333;
 }
 
-#center_column .products_block ul li div a.lnk_more {
+#center_column .products_block ul li div a.lnk_more,
+ #homefeaturedProductContent div a.lnk_more {
 	background: none;
 	padding-bottom: 2px;
 	padding-left: 10px;
